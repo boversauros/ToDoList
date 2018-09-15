@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello To Do!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-mobile">
+        <div class="column is-half is-offset-one-quarter">
+          <h1 class="title">Welcome to the To Do List!</h1>
+          
+          
+            <!-- Start ADD --> 
+            <div class="columns">
+              <div class="field column is-four-fifths">
+                <div class="control">
+                  <input class="input" type="text" placeholder="You have something to do" id="todo_item">
+                </div>
+              </div>
+              <div class="column control">
+               <button onclick="addTodoItem(); return false" class="button is-primary" style="width: 100%;">Add</button>
+              </div>
+            </div>
+            <!-- End ADD -->
+
+            <!-- Start list -->
+            <div class="columns">
+              <div class="column">
+                <ul id="todo_list">
+                  <li">
+                    <!-- Add todo items -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- End list -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>

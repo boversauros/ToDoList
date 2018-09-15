@@ -1,0 +1,19 @@
+ul li {
+	padding: 3%;
+}
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ul li:hover {
+  background-color: #00d1b2;
+  color: white;
+  cursor:pointer ;
+}
+
+ul li.done{
+	background-color: #00d1b2 !important;
+	color: white;
+	text-decoration: line-through;
+}
