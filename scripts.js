@@ -9,11 +9,11 @@ list.addEventListener('click', function(event) {
 //add todo item
 function addTodoItem()
 {
-	
 	if(document.getElementById('todo_item').value == ''){
 		alert('You have to write something');
 	}else{
 
+		//create list element
 		const todoItem = document.getElementById('todo_item').value;
 		const li = document.createElement('li');
 		const todo = document.createTextNode(todoItem);
@@ -21,16 +21,12 @@ function addTodoItem()
 
 		//create close element
 		const span_close = document.createElement('button');
-		const cross = document.createTextNode('\u00D7');
-
-		span_close.className = "button is-danger is-outlined is-pulled-right delete_todo";
-		span_close.appendChild(cross);
+		span_close.className = "delete is-medium is-pulled-right delete_todo";
 		span_close.onclick = function() { this.parentElement.remove(); };
 		li.appendChild(span_close);
 
 		//add to the list
 		document.getElementById("todo_list").appendChild(li);
 		document.getElementById("todo_item").value = "";
-
 	}
 }
