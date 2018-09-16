@@ -15,14 +15,14 @@
         <div class="column is-half is-offset-one-quarter">
           <h1 class="title">Welcome to the To Do List!</h1>
           
-          <!-- <div class="columns">
+          <div class="columns" id="notification_div" style="display: none;">
             <div class="column">
               <div class="notification is-primary">
-                <button class="delete"></button>
-                Congratulations on <strong>completting</strong> all your tasks
+                <!-- <button class="delete"></button> -->
+                Congratulations on <strong>completing</strong> all your tasks
               </div>
             </div>
-          </div> -->
+          </div>
           
             <!-- Start ADD --> 
             <div class="columns">
@@ -41,21 +41,20 @@
             <div class="columns">
               <div class="column">
                 <ul id="todo_list">
-                  <li">
-                    <!-- Add todo items -->
-                  </li>
+
                 </ul>
               </div>
             </div>
             <!-- End list -->
 
             <!-- Progress section -->
-            <!-- <hr>
             <div class="columns">
-              <div class="column">
-                <progress class="progress is-primary" value="10" max="15">15%</progress>
+              <div class="column" id="progress_div" style="display: none;">
+               <hr>
+               <h3>Progress:</h3>
+                <progress id="progress_bar" class="progress is-primary" value="" max=""></progress>
               </div>
-            </div> -->
+            </div> 
             <!-- End progress section -->
         </div>
       </div>
